@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Profile</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid class="ion-margin">
+    <ion-row class="ion-justify-content-center ion-margin">
+      <ion-avatar style="width: 120px; height: 120px">
+        <img
+          alt="Silhouette of a person's head"
+          src="https://ionicframework.com/docs/img/demos/avatar.svg"
+        />
+      </ion-avatar>
+    </ion-row>
+    <ion-row class="ion-justify-content-center ion-margin">
+      <ion-button fill="outline" shape="round"  style="text-transform: capitalize" (click)="editProfile()">
+        Edit Profile
+      </ion-button>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

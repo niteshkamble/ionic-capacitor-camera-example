@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  async editProfile(){
+    console.log('Edit profile Clicked.');
+    
+  }
+
 }
